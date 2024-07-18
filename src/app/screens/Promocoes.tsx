@@ -21,7 +21,8 @@ type produtoProps = {
 }
 
 type promocoesProps = {
-    itePrmId: string; 
+    idItePrm: string;
+    itePrmId: number; 
     itePrmSeq: number; 
     itePrmProId: number; 
     itePrmPreVenda: number; 
@@ -65,7 +66,7 @@ export default function Promocoes() {
                 horizontal={false}
                 numColumns={2}
                 renderItem={({item}) => <ListPromocoes data={item} />}
-                keyExtractor={(item) => item.itePrmId}
+                keyExtractor={(item) => item.idItePrm}
             />
         </View>
     )

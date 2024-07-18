@@ -17,6 +17,7 @@ type produtoProps = {
 }
 
 type promocoesProps = {
+  idItePrm: string;
   itePrmId: string; 
   itePrmSeq: number; 
   itePrmProId: number; 

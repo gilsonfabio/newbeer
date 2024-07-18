@@ -23,14 +23,14 @@ export default function NewUser(){
             email, 
             celular, 
             password            
-          })
-          router.canGoBack();          
+          })                    
         } catch (error) {
           if (isAxiosError(error)) {
             return Alert.alert(error.response?.data)
           }
           Alert.alert("Não foi possível realizar cadastro.")
         }
+        router.back();
     }
 
     return(
